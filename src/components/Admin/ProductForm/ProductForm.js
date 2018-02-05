@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Form, Input, Button, notification } from 'antd';
-import clasess from './ProductForm.scss'
-import base from '../../../base';
+import clasess from './ProductForm.scss';
+import base from '../../../api/base';
 
 const FormItem = Form.Item;
 
@@ -29,7 +29,7 @@ class ProductForm extends Component {
       notification['success']({
         message: "Информация успешно обновлена!"
       });
-      this.props.fetchProduct("");
+      this.props.fetchProduct();
      }).catch(err => {
    
      });
@@ -42,7 +42,7 @@ class ProductForm extends Component {
       base.push('phones', {
         data: values
       }).then((response) => {
-        this.props.fetchProduct("");
+        this.props.fetchProduct();
         notification['success']({
           message: "Продукт успешно добавлен!"
         });

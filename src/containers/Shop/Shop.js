@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { notification } from 'antd';
 import  'antd/dist/antd.css';
-import base from '../../base';
+import base from '../../api/base';
 import Header from '../../components/UI/Header/Header';
 import Menu from '../../components/UI/Menu/Menu';
-import Cards from '../../components/CardShop/Cards';
+import Cards from '../../components/ProductCards/Cards';
 import Admin from '../../components/Admin/Admin';
-import Basket from '../../components/CardShop/Basket/Basket';
+import Basket from '../../components/Basket/Basket';
 
 
 
@@ -21,11 +21,11 @@ class Shop extends Component {
 
 
   componentDidMount () {
-    this.fetchProduct("");
+    this.fetchProduct();
   }
 
 
-  fetchProduct = (url) =>{
+  fetchProduct = () =>{
     let phones = {};
     base.fetch('phones', {
       context: this,
