@@ -1,0 +1,23 @@
+.Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Inner_Container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin-top: 50px;
+}
+
+.Container_Button {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 50px;
+    max-width: 260px;
+
+    button{
+        margin-bottom: 5px;
+    }
+}

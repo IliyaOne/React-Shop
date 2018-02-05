@@ -1,0 +1,74 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px #e2e0e0;
+    position:relative;
+    background-color: #fff;
+    height: 412px;
+    padding: 10px;
+
+    img{
+      height: auto;
+      width: 100%;
+    }
+
+    .ButtonAdd{
+        background-color: #f2f969;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        border-radius: 50px;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        cursor: pointer;
+    }
+
+    .Active{
+        background-color: rgb(250, 38, 38);
+        color: #fff;
+    }
+    
+
+
+    .Info{
+        margin: 10px 0px 0px 15px;
+         p{
+            margin-top: 5px;
+         }
+        .Company{
+            color:#b7b7b7;
+        }
+        .Model{
+            font-size: 18px;
+            max-height: 54px;
+            overflow: hidden;
+        }
+        .Price{
+            font-size: 20px;
+            font-weight: bold;        
+        }
+    }
+}
+
+.Product_Image{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.Column{
+    width: calc(100%/12 * 3);
+    padding: 1%;
+}
