@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button} from 'antd';
 import { Route, Link, Switch } from 'react-router-dom';
-import  'antd/dist/antd.css';
 import classes from './Admin.scss';
 import ProductForm from '../Admin/ProductForm/ProductForm';
 

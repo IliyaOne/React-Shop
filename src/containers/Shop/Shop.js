@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { notification } from 'antd';
-import  'antd/dist/antd.css';
 import base from '../../api/base';
 import Header from '../../components/UI/Header/Header';
 import Menu from '../../components/UI/Menu/Menu';
